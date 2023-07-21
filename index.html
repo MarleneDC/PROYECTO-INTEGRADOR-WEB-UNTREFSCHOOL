@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/master.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+     <!--Enlaces paea utilizar iconos-->
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
     <div id="container">
@@ -13,13 +20,16 @@
             <figure id="logo">
                 <img src="./img/logo-untref-school.png" alt="Logo Untref School" class="logo">
             </figure>
-            <div iud="menu">
+            <div id="menu">
                 <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
                       <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                           <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Quienes somos</a>
+                            <a class="nav-link" aria-current="page" href="#">Quienes somos</a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link" href="#">¿Por qué elegirnos?</a>
@@ -27,8 +37,12 @@
                           <li class="nav-item">
                             <a class="nav-link" href="#">Propuesta educativa</a>
                           </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Últimas noticias</a>
+                          </li>
                         </ul>
-                        <a class="navbar-brand" href="#">Últimas noticias</a>
+                        <button class="btn btn-outline-dark">
+                        <a class="nav-link" href="#">Inscripción 2024</a>
                         </button>
                       </div>
                     </div>
@@ -37,17 +51,135 @@
         </header>
 
         <main id="main-container">
-            <section id="presentacion"> 
-                <div>Bienvenid@s a Untref School</div>
-                <div> Inscripción 2023</div>
+            <section id="presentacion">
+                <div>
+                  <h1 class="titulo">Bienvenid@s<br>a Untref School</h1>
+                  <button class="btn btn-outline-dark">Inscripción 2023</button>
+                </div>
+                <div class="presentacion-img"></div>
             </section>
-            <section id="quinesSomos"></section>
-            <section id="porQueElegirnos"></section>
-            <section id="propuestaEducativa"></section>
-            <section id="ultimasNoticias"></section>
+
+            <section id="quienesSomos">
+              <div>
+                <h2 class="subtitulo">Quienes Somos</h2>
+                <p class="p-quienesSomos">Untref School, es una Institución Educativa pública que comenzó a funcionar en el año 1994 y está dirigido a la formación integral en nivel primario. Nuestro proyecto tiene como meta que puedan adquirir competencias para desarrollarse como personas reflexivas, críticas y comprometidas en valores para la construcción de una sociedad mejor, dentro de un clima cálido y afectuoso donde puedan aprender a gestionar sus emociones.</p>
+              </div>
+              <div class="quienesSomos-img"></div>
+            </section>
+
+            <section id="porQueElegirnos">
+              <div class="porqueElegirnos">
+                <h2 class="subtitulo">¿Por qué elegirnos?</h2>
+                
+                <div id="destacado">
+                  <h3 class="destacado">Tenemos excelentes instalaciones que permitirán un desarrollo académico, deportivo y cultural.</h3>
+                </div>
+                <div id="destacado">
+                  <h3 class="destacado">Tenemos excelentes instalaciones que permitirán un desarrollo académico, deportivo y cultural.</h3>
+                </div>
+              </div>
+
+              <div class="porqueElegirnos">
+                <div class="destacado-especial">
+                  <p>El objetivo principal en el Nivel Primario es brindarle a nuestros alumnos y alumnas una Educación que le permita crecer en forma autónoma y responsable con los estímulos necesarios acorde a cada etapa de crecimiento para acceder a saberes, competencias, capacidades y recursos personales en un clima afectuosos donde predomina el dialogo y la contención con diferentes proyectos áulico donde puedan aprender a gestionar sus emociones , logrando aprendizajes más eficaces como así también aumentar la motivación.</p>
+                </div>
+                <div id="destacado">
+                  <h3 class="destacado">Contamos con personal docente con amplia experiencia.</h3>
+                </div>
+            </div>
+              
+            </section>
+            
+            <section id="propuestaEducativa">
+              <h2 class="subtitulo">Propuesta educativa</h2>
+              <p class="propuesta">En Untref School nuestro método de enseñanza se adapta a las necesidades. Nuestro modelo educativo tiene el propósito de brindar una formación integral en todos los niveles académicos.Nuestra Misión es brindar educación de excelencia, para así formar individuos íntegros que sean líderes que transformen su entorno y su generación.</p>
+            </section>
+
+            <aside>
+              <h3 class="destacado">Accedé a nuestra Charla informativa y conocé todo sobre Untref School</h3>
+            </aside>
+
+            <section id="ultimasNoticias">
+              <article>Noticia 1</article>
+              <article>Noticia 2</article>
+              <article>Noticia 3</article>
+              <button>Ver más</button>
+            </section>
+
+            <section id="inscripcion">
+              <div>
+                <h3 class="destacado">Abierta la inscripción 2024</h3>
+                <p>En Untref School nuestro método de enseñanza se adapta a las necesidades. Nuestro modelo educativo tiene el propósito de brindar una formación integral en todos los niveles académicos.Nuestra Misión es brindar educación de excelencia, para así formar individuos íntegros que sean líderes que transformen su entorno y su generación.</p>
+              </div>
+              <div>
+                <h3 class="destacado">Completá el formulario</h3>
+                <div >
+                <form id="formulario">
+                  <div class="row">
+
+                    <div class="mb-3 col-12 col-md-6">
+                      <label for="fname" class="form-label">Nombre:</label>
+                      <input type="text" id="fname" name="fname" class="form-control">
+
+                    </div>
+                      <div class="mb-3 col-12 col-md-6">
+                      <label  for="lname" class="form-label">Apellido:</label>
+                      <input  type="text" id="lname" name="lname" class="form-control">
+                    </div>
+
+                      <div class="mb-3 col-12 col-md-6">
+                      <label  for="lname" class="form-label">Telefono:</label>
+                      <input  type="number" id="lname" name="lname" class="form-control">
+                    </div>
+
+                    <div class="mb-3 col-12 col-md-6">
+                      <label  for="lname" class="form-label">Celular:</label>
+                      <input  type="number" id="lname" name="lname" class="form-control">
+                    </div>
+
+                    <div class="mb-3 col-12">
+                      <label for="email" class="form-label">E-Mail</label>
+                      <input name="email" type="text" placeholder="E-Mail" class="form-control" value="">
+                    </div>
+
+                    <div class="mb-3 col-12">
+                      <label for="email" class="form-label">Mensaje</label>
+                      <input name="textarea" type="textarea" placeholder="Mensaje" class="form-control" value="">
+                    </div>
+
+                    <div class="mb-3 col-12">
+                      <input class="btn-enviar" type="submit" value="Submit">
+                    </div>
+                   
+                </div>
+                </form>
+              </div>
+              </div>
+            </section>
         </main>
         
-        <footer id="piePagina"></footer>
+        <footer id="piePagina">
+            <div id="redes">
+                <a href="https://www.instagram.com" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://www.facebook.com" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://www.linkedin.com" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+            <div>
+              <figure id="logo">
+                <img src="./img/logo-untref-school.png" alt="Logo Untref School" class="logo">
+            </figure>
+            </div>
+            <div id="contacto">
+              <h4>Contacto</h4>
+              <h6>Telefono</h6>
+              <h6>Dirección</h6>
+              <h6>Mail</h6>
+            </div>
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52545.66636323118!2d-58.56693710202044!3d-34.60152785271764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7c0fa8ea61b%3A0xc39ce2c5b55bb74!2sUniversidad%20Nacional%20de%20Tres%20de%20Febrero%20(UNTREF)%20-%20Rectorado!5e0!3m2!1ses-419!2sar!4v1689905533399!5m2!1ses-419!2sar" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+        </footer>
     </div>
 </body>
 </html>
