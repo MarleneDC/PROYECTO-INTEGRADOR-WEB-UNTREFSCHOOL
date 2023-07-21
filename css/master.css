@@ -1,0 +1,87 @@
+/*   CSS Global  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,800;1,200;1,400;1,600;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Poppins:ital,wght@0,200;0,400;0,600;0,800;1,200;1,400;1,600;1,800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#container{
+    background-color: #181823;
+    font-size: 50px;
+    color: #EFF5F5;
+}
+
+#encabezado{
+    background-color: #EFF5F5;
+    display: grid;
+    align-items: center;
+    font-size: 20px;
+}
+
+#logo{
+    margin: auto;
+    padding: 10px 10px 10px 0px;
+
+}
+.logo{
+    width: 100px;
+}
+
+#main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+
+
+
+/*=== 
+@media (min-width: 768px) { 
+    /*=== Aplicando CSS al encabezado
+    #encabezado{
+        display: grid;
+        grid-template-columns: 1fr 2fr; 
+        align-items: center;
+    }
+    #menu{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    #opcionesIzquierdo{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    #opcionesDerecho{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    } 
+    /*=== Aplikcando CSS a la seccioin productos
+    #productos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    /*=== Aplicando CSS a la Galería
+    section#galeria{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+
+} ===*/
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    #encabezado{
+        grid-template-columns: 0.5fr 3fr; 
+    }
+    section#galeria{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 10px;
+    }
+}
