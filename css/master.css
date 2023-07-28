@@ -23,6 +23,8 @@ p {
 #encabezado{
     background-color: #EFF5F5;
     align-items: center;
+    display: grid;
+    grid-template-columns: 0.5fr 3fr; 
 }
 
 .nav-item {
@@ -49,27 +51,16 @@ p {
 }
 
 /* secciones CSS */
+
 /* presentacion */
 
-#presentacion {
-    height: 500px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+#presentacion-container {
     background-color: #EFF5F5;
-    padding: 100px;
 }
 
 .titulo {
     color:#FC7300;
     font-weight: 700;
-    margin-top: 100px;
-}
-
-.presentacion-img{
-    width: 600px;
-    height: 300px;
-    background-color: blue;
-    border-radius: 20px;
 }
 
 /* quienes somos */
@@ -231,13 +222,46 @@ ion-icon{
     font-size: 20px;
 }
 
+@media (min-width: 360px) { 
+
+    #logo{
+        margin-left: 50px;
+    }
+    /*presentacion css*/
+    section#presentacion-container{
+        padding: 50px;
+    }
+
+    .presentacion-img{
+        width: 90%;
+    }
+}
+
 @media (min-width: 768px) { 
     /*=== Aplicando CSS al encabezado===*/
     #encabezado{
-        display: grid;
-        grid-template-columns: 0.5fr 2fr; 
         align-items: center;
     }
+
+     /*presentacion css*/
+    section#presentacion-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 50px;
+    }
+    .presentacion{
+        margin-left: 100px;
+        margin-top: 60px;
+        font-size: 50px;
+    }
+    .presentacion-img{
+        width: 90%;
+    }
+    h1.titulo{
+        font-size: 2.5rem;
+    }
+
     /*===
     #menu{
         display: grid;
@@ -267,14 +291,31 @@ ion-icon{
 } 
 /*X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
+
+    /*encabezado
+
     #encabezado{
         display: grid;
         grid-template-columns: 0.5fr 3fr;
-        align-items: center;
-    }
-    section#galeria{
+        align-items: left;
+    }*/
+
+    /*presentacion css*/
+    section#presentacion-container{
         display: grid;
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: 1fr 1fr;
         gap: 10px;
+        padding: 50px;
+    }
+    .presentacion{
+        margin-left: 60px;
+        margin-top: 100px;
+        font-size: 50px;
+    }
+    .presentacion-img{
+        width: 90%;
+    }
+    h1.titulo{
+        font-size: 4rem;
     }
 }
