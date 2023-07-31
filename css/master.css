@@ -132,17 +132,29 @@ p {
 
 /* propuestaEducativa */
 #propuestaEducativa{
-    height: 200px;
-    margin: 5px 50px 50px 50px;
+    margin: 0 50px 50px 50px;
     background-color: #00425A;
     border-radius: 5px;
     text-align: center;
-    padding: 5px;
+    padding: 50px;
+}
+
+#propuestaEducativa >p{
+    color: #EFF5F5;
+    text-align: left;
 }
 
 .propuesta{
-    color: #EFF5F5;
+    border: 2px solid #FC7300;
+    border-radius: 5px;
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
 
+.propuesta > .destacado{
+    color: #FC7300;
 }
 
 /* aside */
@@ -158,13 +170,54 @@ aside{
 /* Ultimas noticias */
 
 #ultimasNoticias{
-    height: 200px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 50px;
-    border-radius: 20px;
+    margin:50px;
 }
 
+
+
+article{
+    border: 2px solid #FC7300;
+    background-color: #EFF5F5;
+    border-radius: 5px;
+    display: grid;
+    gap: 20px;
+}
+
+article >a >img {
+    object-fit: cover;
+}
+
+.noticia-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.noticia{
+    color: #00425A;
+    font-size: 15px;
+    padding: 20px;
+}
+
+.boton-noticia{
+    
+    width: 200px;
+    background-color: none;
+    border: 2px solid #EFF5F5;
+    border-radius: 5px;
+    background-color: #181823;
+    color: #EFF5F5;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+#noticias{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
 /* Inscripcion y formulario */
 
 #inscripcion{
@@ -263,7 +316,20 @@ ion-icon{
         width: 100%;
     }
 
+    /* propuesta educativa */
+    #propuestas{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        
+    }
 
+    /* noticias */
+    .ultimasNoticias{
+        display: grid;
+        border-radius: 5px;
+        gap: 20px;
+    }
 
 }
 
@@ -303,9 +369,20 @@ ion-icon{
         object-fit: cover;
     }
 
-   
-
-   
+    /* propuesta educativa */
+    #propuestas{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        
+    }
+   /* noticias */
+    .ultimasNoticias{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        border-radius: 5px;
+        column-gap: 20px;
+    }
     
 
     /*===
@@ -370,6 +447,15 @@ ion-icon{
         margin-left: 80px;
         margin-top: -50px;
     }
+
+    /* propuesta educativa */
+    #propuestas{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 30px;
+        
+    }
+
 
     
 }
