@@ -160,7 +160,6 @@ p {
 /* aside */
 
 aside{
-    height: 100px;
     margin: 20px 0px 20px 0px;
     text-align: center;
     padding: 40px;
@@ -180,7 +179,6 @@ article{
     background-color: #EFF5F5;
     border-radius: 5px;
     display: grid;
-    gap: 20px;
 }
 
 article >a >img {
@@ -190,7 +188,7 @@ article >a >img {
 .noticia-img{
     width: 100%;
     height: 100%;
-    border-radius: 5px;
+    border-radius: 5px 5px 0 0px;
 }
 
 .noticia{
@@ -218,33 +216,31 @@ article >a >img {
     justify-content: space-between;
     margin-bottom: 20px;
 }
+
+
+
 /* Inscripcion y formulario */
 
 #inscripcion{
-    height: 200px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 5px 50px 50px 50px;
     background-color: #FC7300;
     border-radius: 5px;
     text-align: center;
-    padding: 5px;
-    margin-bottom: 300px;
+}
+
+#inscripcion > div >p{
+    text-align: left;
+    color: #EFF5F5;
 }
 
 #formulario{
-    height: 400px;
-    width: 400px;
     background-color: #00425A;
     border-radius: 5px;
-    padding: 10px;
-    margin-left: 150px;
+    text-align: left;
 }
 
 label{
     font-size: 10px;
     color: white;
-    text-align: left;
 }
 
 input{
@@ -263,18 +259,6 @@ input{
 }
 
 /* Footer */
-
-#piePagina{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 0px 20px 20px 20px;
-}
-
-#redes{
-    display: flex;
-    flex-direction: column;
-    margin-left: 100px;
-}
 
 ion-icon{
     color:#FC7300;
@@ -331,6 +315,44 @@ ion-icon{
         gap: 20px;
     }
 
+    /* Inscripcion y formulario */
+
+    #inscripcion{
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 30px 560px 30px;
+        padding: 20px 10px 0px 10px;
+    }
+
+    #inscripcion > div >p{
+        padding: 15px;
+    }
+    
+    #formulario{
+        height: 550px;
+        width: 300px;
+        padding: 10px 20px 20px 20px;
+    }
+
+    /* Footer */
+
+    #piePagina{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        padding: 0px 20px 40px 20px;
+        gap: 20px;
+    }
+
+    #redes{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+
 }
 
 @media (min-width: 768px) { 
@@ -384,35 +406,48 @@ ion-icon{
         column-gap: 20px;
     }
     
+    /* Inscripcion y formulario */
 
-    /*===
-    #menu{
-        display: grid;
-        grid-template-columns: 2fr 1fr;
+    #inscripcion{
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 50px 400px 50px;
+        padding: 30px 50px 0px 50px;
     }
-    #opcionesIzquierdo{
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
+
+    #inscripcion > div >p{
+        padding: 30px;
     }
-    #opcionesDerecho{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    } 
-    /*=== Aplikcando CSS a la seccioin productos
-    #productos{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+ 
+    #formulario{
+        height: 400px;
+        width: 450px;
+        padding: 10px 20px 20px 20px;
     }
-    /*=== Aplicando CSS a la Galería
-    section#galeria{
+
+    /* Footer */
+
+    #piePagina{
+        height: auto;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-    }===*/
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0px 20px 0px 20px;
+        padding: 0px 20px 40px 20px;
+    }
+
+    #redes{
+        display: flex;
+        flex-direction: column;
+        margin-left: 100px;
+    }
+
+    
 
 
 } 
-/*X-Large devices (large desktops, 1200px and up)*/
+
 @media (min-width: 1200px) { 
 
     /*presentacion*/
@@ -455,6 +490,33 @@ ion-icon{
         gap: 30px;
         
     }
+
+    /* Inscripcion y formulario */
+
+    #inscripcion{
+        height: 350px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+        margin: 0 50px 200px 50px;
+        background-color: #FC7300;
+        border-radius: 5px;
+        text-align: center;
+        padding: 30px 50px 0px 50px;
+    }
+
+    #inscripcion > div >p{
+        padding: 30px;
+    }
+
+    #formulario{
+        height: 400px;
+        width: 450px;
+        padding: 10px 20px 20px 20px;
+        margin-left: 150px;
+    }
+
+    
 
 
     
